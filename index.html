@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alemnesh Abate Zemenawi Shmena · አለምነሽ አባተ ዘመናዊ ሽመና — Handwoven Ethiopian Textiles</title>
+<meta name="description" content="Traditional Ethiopian handwoven netela, tibeb, gabi, shawls and blankets by Alemnesh Abate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&family=Noto+Serif+Ethiopic:wght@300;400&family=Noto+Sans+Ethiopic:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top" data-i18n="name">Alemnesh Abate Zemenawi Shmena</a>
+  <button class="lang-btn" type="button" aria-label="Switch language">አማ</button>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="links">
+    <a href="#gallery" data-i18n="navGallery">Gallery</a><a href="#about" data-i18n="navWeaver">The Weaver</a><a href="#contact" data-i18n="navContact">Contact</a>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="img-wrap hero-bg"><img src="assets/images/hero.jpg" alt="Handwoven netela and shawls"></div>
+  <div class="hero-content">
+    <p class="eyebrow" data-i18n="heroEyebrow">Handwoven in Ethiopia</p>
+    <h1 data-i18n="name">Alemnesh Abate Zemenawi Shmena</h1>
+    <p class="tagline" data-i18n="tagline">Threads of tradition — netela, gabi and tibeb woven by hand, one row at a time.</p>
+    <a class="btn" href="#gallery" data-i18n="btn">View the collection</a>
+  </div>
+</section>
+<div class="thread" aria-hidden="true"></div>
+
+<section id="gallery" class="section reveal">
+  <p class="eyebrow" data-i18n="galEyebrow">Handwoven pieces</p>
+  <h2 data-i18n="galTitle">The Collection</h2>
+  <p class="lead" data-i18n="galLead">Each piece is woven on a traditional loom. Tap any piece to see it larger.</p>
+  <div class="filters" role="group" aria-label="Filter by category">
+    <button class="active" data-filter="all" data-i18n="fAll">All</button>
+    <button data-filter="netela" data-i18n="fNetela">Netela &amp; Tibeb</button>
+    <button data-filter="gabi" data-i18n="fGabi">Gabi &amp; Shawls</button>
+    <button data-filter="home" data-i18n="fHome">Blankets &amp; Home</button>
+    <button data-filter="collection" data-i18n="fCollection">Collection</button>
+  </div>
+  <div class="grid">
+    <!-- data-cat must be: netela, gabi, home or collection -->
+    <figure class="item" data-cat="collection"><div class="img-wrap" style="aspect-ratio:3/2"><img src="assets/images/hero.jpg" alt="Stacks of colourful handwoven pieces with white netela and tibeb borders" loading="lazy"></div><figcaption data-i18n="c1">The full collection</figcaption></figure>
+    <figure class="item" data-cat="netela"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/netela-green-gold-tibeb.jpg" alt="Wrapped white netela with a green and yellow chevron tibeb border" loading="lazy"></div><figcaption data-i18n="c2">Netela with green &amp; gold tibeb</figcaption></figure>
+    <figure class="item" data-cat="gabi"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/earth-tone-gabi-stack.jpg" alt="Stacked woven pieces in sand, cream and mustard" loading="lazy"></div><figcaption data-i18n="c3">Earth-tone stack</figcaption></figure>
+    <figure class="item" data-cat="gabi"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/colorful-shawl-stack.jpg" alt="Stack of shawls in white, maroon, teal, blue, green and red" loading="lazy"></div><figcaption data-i18n="c4">A spectrum of shawls</figcaption></figure>
+    <figure class="item" data-cat="netela"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/netela-red-tibeb.jpg" alt="White netela with a red tibeb band of diamond motifs" loading="lazy"></div><figcaption data-i18n="c5">Red diamond tibeb</figcaption></figure>
+    <figure class="item" data-cat="home"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/patterned-blankets-pink-blue.jpg" alt="Woven blankets with pink, purple and blue diamond patterns" loading="lazy"></div><figcaption data-i18n="c6">Patterned blankets</figcaption></figure>
+    <figure class="item" data-cat="home"><div class="img-wrap" style="aspect-ratio:3/2"><img src="assets/images/alemnesh-at-stall.jpg" alt="Alemnesh arranging colourful woven blankets at her stall" loading="lazy"></div><figcaption data-i18n="c13">At the stall</figcaption></figure>
+    <figure class="item" data-cat="netela"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/netela-green-tibeb.jpg" alt="White netela with a bright green tibeb band of diamond motifs" loading="lazy"></div><figcaption data-i18n="c7">Green diamond tibeb</figcaption></figure>
+    <figure class="item" data-cat="gabi"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/pastel-shawl-stack.jpg" alt="Stacked shawls in cream, taupe, peach and pale blue" loading="lazy"></div><figcaption data-i18n="c8">Pastel shawls</figcaption></figure>
+    <figure class="item" data-cat="netela"><div class="img-wrap" style="aspect-ratio:9/16"><img src="assets/images/netela-dark-chevron-tibeb.jpg" alt="Netela with a dark tibeb band of colourful arrow motifs" loading="lazy"></div><figcaption data-i18n="c9">Dark chevron tibeb</figcaption></figure>
+    <figure class="item" data-cat="gabi"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/cream-gabi-stack.jpg" alt="A stack of cream gabi" loading="lazy"></div><figcaption data-i18n="c10">Cream gabi</figcaption></figure>
+    <figure class="item" data-cat="netela"><div class="img-wrap" style="aspect-ratio:3/4"><img src="assets/images/netela-red-tibeb-silver-thread.jpg" alt="Red tibeb border beside a spool of silver thread" loading="lazy"></div><figcaption data-i18n="c11">Red tibeb &amp; silver thread</figcaption></figure>
+    <figure class="item" data-cat="netela"><div class="img-wrap" style="aspect-ratio:2/3"><img src="assets/images/netela-arrow-tibeb.jpg" alt="Netela with dark arrow-pattern tibeb borders" loading="lazy"></div><figcaption data-i18n="c12">Arrow tibeb</figcaption></figure>
+  </div>
+</section>
+<div class="thread" aria-hidden="true"></div>
+
+<section id="about" class="section about reveal">
+  <div class="about-photos">
+    <div class="img-wrap about-img"><img src="assets/images/about.jpg" alt="Alemnesh Abate with her handwoven work" loading="lazy"></div>
+    <div class="img-wrap about-img2"><img src="assets/images/alemnesh-at-stall.jpg" alt="Alemnesh arranging colourful woven blankets at her stall" loading="lazy"></div>
+  </div>
+  <div>
+    <p class="eyebrow" data-i18n="aboutEyebrow">The hands behind the loom</p>
+    <h2 data-i18n="aboutTitle">About the Weaver</h2>
+    <p data-i18n="about1">Alemnesh turned her deep love for authentic Ethiopian textiles into a thriving, modern fashion venture. When she’s not busy curating vibrant threads and playing with fresh silhouettes, she’s building a brand that proves traditional handlooms belong in modern everyday life—not just stored away for special occasions.</p>
+    <p data-i18n="about2">For her, weaving isn't just business—it’s pure energy, self-expression, and storytelling through fabric.</p>
+    <p data-i18n="about3">Have a design vision or want to bring a custom idea to life? Alemnesh is always excited to create something magic with you!</p>
+  </div>
+</section>
+<div class="thread" aria-hidden="true"></div>
+
+<section id="contact" class="section contact reveal">
+  <p class="eyebrow" data-i18n="contactEyebrow">Orders &amp; enquiries</p>
+  <h2 data-i18n="contactTitle">Visit or Get in Touch</h2>
+  <p class="lead" data-i18n="contactLead">Orders, custom pieces and questions — reach out any way you like.</p>
+  <div class="cards">
+    <a class="card" href="tel:+251914737880"><span data-i18n="phone">Phone</span><strong>+251 91 473 7880</strong></a>
+    <a class="card" href="https://wa.me/251989873329" target="_blank" rel="noopener"><span data-i18n="whatsapp">WhatsApp</span><strong>+251 98 987 3329</strong></a>
+    <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Buanbuha%2C+Dessie%2C+Ethiopia" target="_blank" rel="noopener"><span data-i18n="location">Location</span><strong data-i18n="place">Buanbuha, Dessie</strong></a>
+  </div>
+</section>
+
+<footer>© <span id="year"></span> <span data-i18n="name">Alemnesh Abate Zemenawi Shmena</span> · <span data-i18n="footer">Handwoven in Dessie</span></footer>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <figure><div class="img-wrap"><img alt=""></div><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
