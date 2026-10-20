@@ -66,3 +66,15 @@ function setLang(l){
 let saved='en';try{saved=localStorage.getItem('lang')||'en';}catch(e){}
 setLang(saved);
 langBtn.addEventListener('click',()=>setLang(document.documentElement.lang==='am'?'en':'am'));
+// Masonry that keeps left-to-right order: each item spans rows by its height
+const grid=document.querySelector('.grid');
+function layoutMasonry(){
+  const gap=window.innerWidth<=860?24:40,row=4;
+  items.forEach(i=>{if(i.classList.contains('hide'))return;i.style.gridRowEnd='auto';
+    i.style.gridRowEnd='span '+Math.ceil((i.getBoundingClientRect().height+gap)/row);});
+}
+layoutMasonry();
+window.addEventListener('load',layoutMasonry);window.addEventListener('resize',layoutMasonry);
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',layoutMasonry));
+langBtn.addEventListener('click',layoutMasonry);
+if(document.fonts)document.fonts.ready.then(layoutMasonry);
